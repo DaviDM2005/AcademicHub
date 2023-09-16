@@ -199,30 +199,3 @@ main{
 
 
 
-/* footer */
-
-footer{
-    background-color: #040404;
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    text-align: center;
-}
-
-
-footer p{
-    color: #227497;
-    font-size: 15px;
-}
-
-
-@media screen and (max-width: 600px){
-    footer p{
-        color: grey;
-        font-size: 10px;
-    }
-}
-
-footer{
-    overflow-y: hidden;
-}

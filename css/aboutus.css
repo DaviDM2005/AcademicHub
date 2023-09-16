@@ -272,7 +272,91 @@ main{
 
 /* Team  */
 
-
+  .team {
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #227497;
+  }
+  
+  .team-main-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  
+  .team-members-article {
+    width: 320px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+  
+  .team-members-article:hover {
+    transform: translateY(-5px);
+  }
+  
+  .member-info {
+    position: relative;
+  }
+  
+  .member-img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .member-name-surname {
+    position: absolute;
+    bottom: -30px;
+    font-size: 25px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    opacity: 0;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .team-members-article:hover .member-name-surname {
+    bottom: 4px;
+    opacity: 1;
+  }
+  
+  .about-him {
+    padding: 20px;
+    font-size: 19px;
+    color: #227497;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .social-icon {
+    font-size: 35px;
+    margin: 0 10px;
+    color: #2e217a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #0073e6;
+  }
+    
 
 
 /* Colapsible menu */
@@ -321,32 +405,3 @@ main{
 
 
 
-/* footer */
-
-footer {
-    background-color: #007BFF;
-    color: #050505;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute; 
-    bottom: 0; 
-    width: 100%; 
-  }
-
-
-footer p{
-    color: #090909;
-    font-size: 15px;
-}
-
-
-@media screen and (max-width: 600px){
-    footer p{
-        color: grey;
-        font-size: 10px;
-    }
-}
-
-footer{
-    overflow-y: hidden;
-}

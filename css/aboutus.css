@@ -21,10 +21,12 @@
     resize: none;
 }
 body {
-    background-color: #e6dadca0;
+    background-color: #E6DADC;
     height: 100%;
 }
-html{height: 94.8%;}
+html{
+    height: 100%;
+}
 
 /* header and navbar */
 
@@ -43,7 +45,7 @@ html{height: 94.8%;}
     position: fixed;
     padding: 12px 20px;
     z-index: 999;
-    background-color: #e6dadca1;
+    background-color: #e6dadc;
 }
 
 .logo img {
@@ -68,11 +70,17 @@ html{height: 94.8%;}
     background-color: rgba(114, 167, 193, 0.356);
 }
   
+.actived-li{
+    border-bottom: 2px solid #227497 !important;
+}
+.actived-li {
+    border-bottom: 3px solid #227497 !important;
+}
 
 .active-li {
     position: relative;
     transition: border-color 0.3s ease;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
 }
   
   .active-li::before {
@@ -178,7 +186,11 @@ html{height: 94.8%;}
 /* main */
 
 main{
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-page-box{
@@ -186,32 +198,144 @@ main{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
+}
+
+.main-page-box h1{
+    font-size: 80px;
+    border-bottom: 8px solid #227497;
+    color: #227497;
+    padding: 0 45px;
+}
+
+.main-page-box h2{
+    color: #227497;
+    font-size: 40px;
+}
+
+.main-page-box a{
+    border: none;
+    background-color: #227497;
+    color: white;
+    font-size: 28px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.main-page-box a:hover{
+    -webkit-box-shadow: 0px 0px 20px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -4px rgba(0,0,0,0.75);
 }
 
 
+/* aboutus */
+
+.about-us-main{
+    display: flex;
+    margin-top: 8em;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 50px;
+}
+.about-us-main .abt-main-h1{
+    color: #227497;
+    text-align: center;
+    font-size: 50px;
+}
+
+.about-us-main p{
+    font-size: 30px;
+    text-align: justify;
+}
+
+.about-us-main a{
+    font-size: 30px;
+    margin-top: 40px;
+    color: white;
+    background-color: #227497;
+    padding: 5px;
+    width: 15%;
+    border-radius: 10px;
+}
+
+.course-det-h1{
+    font-size: 40px;
+    text-align: left;
+    display: flex;
+    margin-top: 20px;
+    color: #227497;
+}
+
+
+/* Team section */
 
 
 
 
+/* Colapsible menu */
+
+.collapsible {
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    background-color: #227497;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    border-radius: 5px;
+    color: white;
+    width: 8em;
+    margin-top: 20px;
+  }
+  
 
 
+  .collapsible:before {
+    content: "\25B4"; 
+    font-size: 30px; 
+    float: right;
+    transform: translateY(-2px);
+    transition: transform 0.3s;
+}
+
+    
+    .active:before {
+        transform: translateY(-2px) rotate(180deg);
+    }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: transparent;
+  }
+  
+  .content div{
+    color: black;
+  }
 
 
 
 
 /* footer */
 
-footer{
-    background-color: #040404;
-    width: 100%;
-    height: 40px;
-    padding: 10px;
+footer {
+    background-color: #007BFF;
+    color: #050505;
     text-align: center;
-}
+    padding: 10px 0;
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+  }
 
 
 footer p{
-    color: #227497;
+    color: #090909;
     font-size: 15px;
 }
 

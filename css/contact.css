@@ -201,7 +201,12 @@ html{
   
   main {
     padding: 50px;
-    height: 100%;
+  }
+  @media  screen and (min-width:1213px) {
+    main {
+      padding: 50px;
+      height: 100%;
+    }
   }
   
   section {
@@ -241,6 +246,7 @@ html{
 .dev-contact-h1{
     font-size: 50px;
     color: #227497;
+    margin-top: 50px;
 }
 
 .dev-minicard{
@@ -249,6 +255,7 @@ html{
     border-radius: 20px;
     padding: 25px 30px 25px 15px;
     justify-content: space-between;
+    align-items: center;
 }
 .dev-minicard img{
     border-radius: 8px;
@@ -296,14 +303,107 @@ html{
 }
 
 
+/* responsive */
+@media screen and (max-width:1212px) {
+  section{
+    justify-content: center;
+    gap: 20px;
+  }
+  .developer-contact{
+    justify-content: center;
+  }
+}
 
-/* foooter */
+@media screen and (max-width:800px) {
+  .contact-info-h1{
+    font-size: 40px;
+  }
+  .c-info-div a{
+    font-size: 25px;
+  }
+  .dev-contact-h1{
+    font-size: 40px;
+  }
+  .dev-minicard .dev-name{
+    font-size: 30px;
+  }
+  .map{
+    width: 400px;
+  }
+}
+@media screen and (max-width:450px) {
+  .contact-info-h1{
+    font-size: 30px;
+  }
+  .c-info-div a{
+    font-size: 15px;
+  }
+  .dev-contact-h1{
+    font-size: 35px;
+  }
+  .dev-minicard{
+    width: 300px;
+  }
+  .dev-minicard .dev-name{
+    font-size: 25px;
+  }
+  .map{
+    width: 350px;
+  }
+}
 
-footer {
+
+/* logo */
+
+@media screen and (max-width:410px) {
+  .logo a{
+      font-size: 40px;
+  }
+  .logo img{
+      width: 29px !important;
+  }
+}
+@media screen and (max-width:370px) {
+  .logo a{
+      font-size: 35px;
+  }
+  .logo img{
+      width: 25px !important;
+  }
+}
+@media screen and (max-width:340px) {
+  .logo a{
+      font-size: 30px;
+  }
+  .logo img{
+      width: 22px !important;
+  }
+}
+@media screen and (max-width:310px) {
+  .logo a{
+      font-size: 25px;
+  }
+  .logo img{
+      width: 17px !important;
+  }
+}
+
+
+
+  /* foooter */
+
+  footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
     font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+@media screen and (max-width: 400px){
+    footer{
+        font-size: 10px;
+    }
 }

@@ -253,6 +253,7 @@ main{
     .main-page-box a{
         font-size: 18px;
     }
+    
 }
 
 @media screen and (max-width:450px) {
@@ -317,5 +318,19 @@ footer {
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
-    font-family: Arial, sans-serif;
+    font-family: 'futuristic';
+}
+
+@media screen and (max-width:550px) {
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 10px;
+        font-family: 'futuristic';
+    }
+    html{
+        height: 95%;
+    }
 }

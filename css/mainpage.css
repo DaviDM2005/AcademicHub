@@ -8,7 +8,10 @@
 @import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
 @import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
 @import url("//cdn.web-fonts.ge/fonts/bpg-banner-quadrosquare-caps/css/bpg-banner-quadrosquare-caps.min.css");
-
+@font-face {
+    font-family: 'futuristic';
+    src: url(../fonts/rajdhani/futuristic.ttf);
+  }
 
 *{
     box-sizing: border-box;
@@ -20,9 +23,11 @@
     font-family: 'ArchyEDT-Bold';
     resize: none;
 }
-body {
-    background-color: #E6DADC;
+body{
     height: 100%;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 html{height: 94.8%;overflow-y: hidden;}
 
@@ -34,7 +39,7 @@ html{height: 94.8%;overflow-y: hidden;}
     width: 100%;
   }
   
-.nav-bar {
+  .nav-bar {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -42,12 +47,21 @@ html{height: 94.8%;overflow-y: hidden;}
     list-style: none;
     position: fixed;
     padding: 12px 20px;
-    z-index: 999;
-    background-color: #e6dadc;
+    z-index: 999999;
+    background-color: #e6dadcb7;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 10px  black;
 }
 
 .logo img {
     width: 13em;
+}
+.logo a{
+  color: #227497;
+  font-family: 'futuristic';
+  font-size: 45px;
+  border-bottom:3px solid #227497;
+  align-items: center;
 }
 
 .menu{
@@ -141,13 +155,12 @@ html{height: 94.8%;overflow-y: hidden;}
         position: fixed;
         top: 0;
         right: -100%;
-        z-index: 100;
-        transition: all 0.2s ease-in-out;
-        backdrop-filter: blur(5px);
-        background-color: #9692927b;
+        z-index: -1;
+        transition: all 0.3s ease-in;
+        background-color: #ffffff;
     }
-    .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
+    .menu li {margin-top: 40px; }
+    .menu li a {padding: 10px; z-index: 999999;}
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
 
@@ -164,21 +177,6 @@ html{height: 94.8%;overflow-y: hidden;}
 .burger-menu-name{
     color: #227497;
 }
-
-  .change{
-    transform: rotate(-180deg);
-  }
-  
-  .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
 
 
 /* main */
@@ -229,11 +227,87 @@ main{
 
 
 
+/* responsive design */
 
+@media screen and (max-width:800px) {
+    .main-page-box h1{
+        font-size: 60px;
+        padding: 0 35px;
+    }
+    .main-page-box h2{
+        font-size: 30px;
+    }
+    .main-page-box a{
+        font-size: 20px;
+    }
+}
 
+@media screen and (max-width:550px) {
+    .main-page-box h1{
+        font-size: 50px;
+        padding: 0 28px;
+    }
+    .main-page-box h2{
+        font-size: 25px;
+    }
+    .main-page-box a{
+        font-size: 18px;
+    }
+}
 
+@media screen and (max-width:450px) {
+    .main-page-box h1{
+        font-size: 45px;
+        padding: 0 23px;
+    }
+    .main-page-box h2{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:405px) {
+    .main-page-box h1{
+        font-size: 40px;
+        padding: 0 7px;
+    }
+    .main-page-box h2{
+        font-size: 18px;
+    }
+}
 
+/* logo */
 
+@media screen and (max-width:410px) {
+    .logo a{
+        font-size: 40px;
+    }
+    .logo img{
+        width: 29px !important;
+    }
+}
+@media screen and (max-width:370px) {
+    .logo a{
+        font-size: 35px;
+    }
+    .logo img{
+        width: 25px !important;
+    }
+}
+@media screen and (max-width:340px) {
+    .logo a{
+        font-size: 30px;
+    }
+    .logo img{
+        width: 22px !important;
+    }
+}
+@media screen and (max-width:310px) {
+    .logo a{
+        font-size: 25px;
+    }
+    .logo img{
+        width: 17px !important;
+    }
+}
 
 /* foooter */
 

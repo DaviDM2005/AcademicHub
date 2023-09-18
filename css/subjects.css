@@ -8,7 +8,10 @@
 @import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
 @import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
 @import url("//cdn.web-fonts.ge/fonts/bpg-banner-quadrosquare-caps/css/bpg-banner-quadrosquare-caps.min.css");
-
+@font-face {
+    font-family: 'futuristic';
+    src: url(../fonts/rajdhani/futuristic.ttf);
+}
 
 *{
     box-sizing: border-box;
@@ -38,7 +41,7 @@ html{
     width: 100%;
   }
   
-.nav-bar {
+  .nav-bar {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -47,11 +50,20 @@ html{
     position: fixed;
     padding: 12px 20px;
     z-index: 999999;
-    background-color: #e6dadc;
+    background-color: #e6dadc35;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 10px  black;
 }
 
 .logo img {
     width: 13em;
+}
+.logo a{
+  color: #227497;
+  font-family: 'futuristic';
+  font-size: 45px;
+  border-bottom:3px solid #227497;
+  align-items: center;
 }
 
 .menu{
@@ -194,7 +206,7 @@ main{
 }
 
 #searchbar{
-    width: 100%;
+    width: 88%;
     height: 50px;
     font-size: 20px;
     padding-left: 20px;
@@ -230,7 +242,7 @@ main{
 .subjects-article{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .subject-card {
@@ -287,7 +299,15 @@ main{
 }
 
 
+/* scrollbar */
 
+::-webkit-scrollbar {
+    background-color: white;
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #227497;
+  }
 
 
 

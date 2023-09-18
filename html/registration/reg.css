@@ -8,6 +8,10 @@
 @import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
 @import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
 @import url("//cdn.web-fonts.ge/fonts/bpg-banner-quadrosquare-caps/css/bpg-banner-quadrosquare-caps.min.css");
+@font-face {
+    font-family: 'futuristic';
+    src: url(../../fonts/rajdhani/futuristic.ttf);
+}
 
 
 *{
@@ -35,7 +39,7 @@ body {
     width: 100%;
   }
   
-.nav-bar {
+  .nav-bar {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -44,12 +48,22 @@ body {
     position: fixed;
     padding: 12px 20px;
     z-index: 999999;
-    background-color: #e6dadc;
+    background-color: #e6dadc35;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 10px  black;
 }
 
 .logo img {
     width: 13em;
 }
+.logo a{
+  color: #227497;
+  font-family: 'futuristic';
+  font-size: 45px;
+  border-bottom:3px solid #227497;
+  align-items: center;
+}
+
 
 .menu{
     align-items: center;
@@ -187,3 +201,15 @@ iframe {
 .m7w29c{
     background-color: red !important;
 }
+
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    background-color: white;
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #227497;
+  }

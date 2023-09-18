@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ონლაინ კურსები">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/subjects.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <title>AcademicHub | საგნები</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='main.html'><img src='../images/logo.jpg'/></a></li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a class="active-li" href="../index.html">მთავარი</a></li>
+                <li><a class="active-li" href="aboutus.html">ჩვენ შესახებ</a></li>
+                <li><a class="active-li" href="contact.html">კონტაქტი</a></li>
+                <li ><a  style="background-color: rgba(114, 167, 193, 0.356);" class="not-active-li" href="subjects.html">საგნები</a></li>
+                
+            </span>
+            <label for="check" class="open-menu">
+                <div class="container" onclick="myFunction(this)">
+                    <h1 class="burger-menu-name" >მენიუ</h1>
+                </div>
+            </label>
+        </ul>
+    </nav>
+    </header>
+
+
+    <main>
+        <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="მოძებნე საგანი..">
+
+        <ol class="subjects-article" >
+
+            
+            <div class="subject-card">
+                <img style="width: 350px;" src="../images/subjects/math.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">მათემატიკა</div>
+                    <div class="description">ლექტორი: არჩილ ქათამაძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-card">
+                <img style="width: 350px;" src="../images/subjects/georgian.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">ქართული ენა</div>
+                    <div class="description">ლექტორი: გიორგი ბარამიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-card">
+                <img style="width: 350px;" src="../images/subjects/english.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">ინგლისური ენა</div>
+                    <div class="description">ლექტორი: გიორგი ბარამიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-card">
+                <img style="width: 350px;" src="../images/subjects/history.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">ისტორია</div>
+                    <div class="description">ლექტორი: გიორგი ბარამიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-card">
+                <img style="width: 350px;" src="../images/subjects/mathbeginners.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">მათემატიკა (დამწყებთათვის) </div>
+                    <div class="description">ლექტორი: გიორგი თურმანიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-card">
+                <img style="width: 350px;" src="../images/subjects/georgianbeginners.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">ქართული ენა (დამწყებთათვის)</div>
+                    <div class="description">ლექტორი: გიორგი თურმანიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-card">
+                <img style="width: 350px;" src="../images/subjects/buneba.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">ბუნება</div>
+                    <div class="description">ლექტორი: გიორგი თურმანიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-card">
+                <img style="width: 350px;" src="../images/subjects/englishbeginners.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">ინგლისური (დამწყებთათვის)</div>
+                    <div class="description">ლექტორი: გიორგი თურმანიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </ol>
+    </main>
+
+    <footer>
+        © By David Mamuladze - ყველა უფლება დაცულია 2023
+    </footer>
+
+
+    <script src="../js/index.js" ></script>
+</body>
+</html>

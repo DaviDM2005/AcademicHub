@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-banner-quadrosquare-caps/css/bpg-banner-quadrosquare-caps.min.css");
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'ArchyEDT-Bold';
+    resize: none;
+    z-index: 9;
+}
+body {
+    background-color: #E6DADC;
+    overflow-x: hidden;
+}
+
+
+/* header and navbar */
+
+.header {
+    height: 100px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    padding: 12px 20px;
+    z-index: 999999;
+    background-color: #e6dadc;
+}
+
+.logo img {
+    width: 13em;
+}
+
+.menu{
+    align-items: center;
+}
+
+.menu li a{
+    font-size: 30px;
+    margin: 0 15px;
+}
+.not-active-li{
+    outline: 1px solid #227497;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.not-active-li:hover{
+    background-color: rgba(114, 167, 193, 0.356);
+}
+  
+.actived-li{
+    border-bottom: 2px solid #227497 !important;
+}
+.actived-li {
+    border-bottom: 3px solid #227497 !important;
+}
+
+.active-li {
+    position: relative;
+    transition: border-color 0.3s ease;
+    padding-bottom: 2px;
+}
+  
+  .active-li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease;
+  }
+  
+  .active-li:hover::before {
+    width: 100%;
+    background-color: #227497;
+  }
+  
+
+
+
+.menu {
+    display: flex;
+}
+
+
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    z-index: 999;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {
+    display: none;
+}
+.menu li a{
+    color: #227497;
+}
+
+
+@media(max-width: 1150px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: all 0.2s ease-in-out;
+        backdrop-filter: blur(5px);
+        background-color: #9692927b;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+
+}
+  
+.burger-menu-name{
+    color: #227497;
+}
+
+
+
+
+
+/* main */
+
+main {
+    padding-top: 7em;
+}
+
+iframe {
+    width: 100%;
+    height: 2873px;
+    border: none;
+}
+
+
+@media screen and (min-width:668px){
+    iframe {
+        width: 100%;
+        height: 2284px;
+        border: none;
+    }
+}
+
+
+.m7w29c{
+    background-color: red !important;
+}

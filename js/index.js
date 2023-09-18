@@ -54,3 +54,20 @@ var coll = document.getElementsByClassName("collapsible");
 function myFunction(x) {
   x.classList.toggle("change");
 }
+
+
+// search system
+
+function search() {
+  let input = document.getElementById('searchbar').value.toLowerCase();
+  let x = document.getElementsByClassName('subject-name');
+  let y = document.getElementsByClassName('subject-card');
+
+  for (i = 0; i < x.length; i++) {
+    if (!input || x[i].innerHTML.toLowerCase().includes(input)) {
+      y[i].style.display = "block"; // Reset to default display value
+    } else {
+      y[i].style.display = "none";
+    }
+  }
+}

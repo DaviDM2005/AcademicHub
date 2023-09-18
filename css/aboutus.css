@@ -355,7 +355,7 @@ main {
     transition: 0.5s;
 }
 #card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-3px);
     box-shadow: 0 0 20px #227497;
 }
 
@@ -529,4 +529,10 @@ main {
     font-size: 14px;
     font-family: Arial, sans-serif;
     width: 100%;
+}
+
+@media screen and (max-width: 400px){
+    footer{
+        font-size: 10px;
+    }
 }

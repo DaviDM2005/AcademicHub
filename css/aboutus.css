@@ -258,6 +258,9 @@ main {
     width: 15%;
     border-radius: 10px;
 }
+.content p{
+    margin-top: 20px;
+}
 
 
 
@@ -441,10 +444,9 @@ main {
     }
   
   .content {
-    padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.5s ease-out;
     background-color: transparent;
   }
   
@@ -461,13 +463,43 @@ main {
     .about-us-main .abt-main-h1{
         font-size: 40px;
     }
-    .about-us-main .abt-main-p{
+    .about-us-main .abt-main-p, .content p{
         font-size: 25px;
     }
 }
 
-
-
+@media screen and (max-width:700px) {
+    .about-us-main .abt-main-h1{
+        font-size: 35px;
+    }
+    .about-us-main .abt-main-p, .content p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:625px) {
+    .about-us-main .abt-main-h1{
+        font-size: 30px;
+    }
+    .about-us-main .abt-main-p, .content p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:550px) {
+    .about-us-main .abt-main-h1{
+        font-size: 25px;
+    }
+    .about-us-main .abt-main-p, .content p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:475px) {
+    .about-us-main .abt-main-h1{
+        font-size: 20px;
+    }
+    .about-us-main .abt-main-p, .content p{
+        font-size: 13px;
+    }
+}
 
 
 

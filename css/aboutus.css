@@ -491,16 +491,10 @@ main {
     .about-us-main .abt-main-p, .content p{
         font-size: 15px;
     }
-}
-@media screen and (max-width:475px) {
-    .about-us-main .abt-main-h1{
-        font-size: 20px;
-    }
-    .about-us-main .abt-main-p, .content p{
-        font-size: 13px;
+    .about-us-main{
+        padding: 0 30px !important;
     }
 }
-
 
 
 

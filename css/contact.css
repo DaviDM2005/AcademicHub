@@ -198,157 +198,181 @@ html{
 
 /* main */
 
-  
-  main {
-    padding: 50px;
-  }
-  @media  screen and (min-width:1213px) {
-    main {
-      padding: 50px;
-      height: 100%;
-    }
-  }
-  
-  section {
-    margin-top: 4em;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .contact-info {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .contact-info-h1 {
-    font-size: 50px;
-    color: #227497;
-  }
+main{
+  padding: 50px;
+  padding-top: 8em;
+}
 
-  .c-info-div{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .phone-number, .gmail {
-    color: #227497;
-    text-decoration: none;
-    font-size: 30px;
-  }
+main section{
+  display: flex;
+  justify-content: space-between;
+}
+.contact-info{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
-  .phone-number span, .gmail span{
-    color: #0e5f82;
-  }
-  
-.dev-contact-h1{
-    font-size: 50px;
-    color: #227497;
-    margin-top: 50px;
+main section article{
+  background-color: white;
+  padding: 20px;
+  width: 48%;
+  border-radius: 10px;
+  box-shadow:inset 0 0 10px rgb(16, 15, 15);
+}
+
+main section .map-article{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-info-h1{
+  color: #227497;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.c-info-div a{
+  font-size: 25px;
+  color: #227497;
+}
+.c-info-div a span{
+  color: #07374c;
 }
 
 .dev-minicard{
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 25px 30px 25px 15px;
-    justify-content: space-between;
-    align-items: center;
-}
-.dev-minicard img{
-    border-radius: 8px;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  box-shadow:inset 0 0 10px rgb(16, 15, 15);
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
 
-.dev-minicard .dev-name{
-    font-size: 55px;
 }
-
-/* social icons */
+.dev-minicard a{
+  font-size: 35px;
+}
 .contact-icons{
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-  }
-  .contact-icons a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-    border-radius: 100%;
-  }
-  .contact-icons a:hover{
-    background-color: rgb(255, 255, 255);
-  }
-  .contact-icons a img{
-    width: 45px;
-  }
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  background-color: #f1eeee;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.contact-icons img{
+  width: 50px;
+}
+.contact-icons a{
+  padding: 3px;
+  background-color: rgb(253, 253, 253);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.contact-icons a:hover{
+  background-color: rgb(196, 196, 196);
+}
 
 .map{
-    border-radius: 15px;
+  width: 100%;
+  height: 500px;
 }
-
-
-/* scrollbar */
-
-::-webkit-scrollbar {
-  background-color: white;
-  width: 4px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #227497;
-}
-
-
 /* responsive */
-@media screen and (max-width:1212px) {
-  section{
-    justify-content: center;
-    gap: 20px;
+
+@media  screen and (max-width:1130px) {
+  .contact-info-h1{
+    color: #227497;
+    font-size: 35px;
+    margin-bottom: 10px;
   }
-  .developer-contact{
-    justify-content: center;
+  
+  .c-info-div a{
+    font-size: 20px;
+    color: #227497;
+  }
+  .dev-minicard a{
+    font-size: 30px;
+  }
+  .contact-icons img{
+    width: 45px;
   }
 }
 
-@media screen and (max-width:800px) {
+@media  screen and (max-width:950px) {
   .contact-info-h1{
-    font-size: 40px;
-  }
-  .c-info-div a{
-    font-size: 25px;
-  }
-  .dev-contact-h1{
-    font-size: 40px;
-  }
-  .dev-minicard .dev-name{
+    color: #227497;
     font-size: 30px;
+    margin-bottom: 10px;
   }
-  .map{
-    width: 400px;
-  }
-}
-@media screen and (max-width:450px) {
-  .contact-info-h1{
-    font-size: 30px;
-  }
+  
   .c-info-div a{
     font-size: 15px;
+    color: #227497;
   }
-  .dev-contact-h1{
-    font-size: 35px;
-  }
-  .dev-minicard{
-    width: 300px;
-  }
-  .dev-minicard .dev-name{
+  .dev-minicard a{
     font-size: 25px;
   }
+  .contact-icons img{
+    width: 40px;
+  }
+}
+@media screen and (max-width:815px) {
+  main section{
+    flex-direction: column;
+    gap: 40px;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main section article{
+    width: 100%;
+  }
   .map{
-    width: 350px;
+    height: 300px;
+  }
+}
+@media  screen and (max-width:370px) {
+  .contact-info-h1{
+    color: #227497;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .c-info-div a{
+    font-size: 10px;
+    color: #227497;
+  }
+  .dev-minicard a{
+    font-size: 20px;
+  }
+  .contact-icons img{
+    width: 35px;
+  }
+}
+@media  screen and (max-width:330px) {
+  .contact-info-h1{
+    color: #227497;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .c-info-div a{
+    font-size: 10px;
+    color: #227497;
+  }
+  .dev-minicard a{
+    font-size: 15px;
+  }
+  .contact-icons img{
+    width: 30px;
   }
 }
 
@@ -386,6 +410,18 @@ html{
   .logo img{
       width: 17px !important;
   }
+}
+
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  background-color: white;
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #227497;
 }
 
 

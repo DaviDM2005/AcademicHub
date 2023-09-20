@@ -182,7 +182,7 @@ main {
     text-align: center;
 }
 main iframe{
-    height: 2350px;
+    min-height: 2610px;
     width: 900px;
 }
 @media screen and (max-width:900px) {
@@ -193,19 +193,19 @@ main iframe{
 }
 @media screen and (max-width:700px) {
     main iframe{
-        height: 3000px;
+        height: 3780px;
         width: 500px;
     }
 }
 @media screen and (max-width:500px) {
     main iframe{
-        height: 3050px;
+        height: 3840px;
         width: 400px;
     }
 }
 @media screen and (max-width:400px) {
     main iframe{
-        height: 3200px;
+        height: 3890px;
         width: 350px;
     }
 }

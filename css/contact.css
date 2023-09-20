@@ -25,10 +25,6 @@
 }
 body {
     background-color: #E6DADC;
-    height: 100%;
-}
-html{
-    height: 100%;
 }
 
 /* header and navbar */
@@ -180,147 +176,92 @@ html{
 }
 
 
+
 /* main */
 
-main{
-  padding: 8em 50px 20px 50px;
-  height: 100%;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-main section{
+main {
+  flex-grow: 1;
+  padding: 50px;
+  padding-top: 8em;
+}
+
+main section {
   display: flex;
   justify-content: space-between;
 }
-.contact-info{
+
+.contact-info {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
-main section article{
-  padding: 10px;
+main section article {
   width: 50%;
 }
 
-main section .map-article{
+main section .map-article {
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
-.contact-info-h1{
+.contact-info-h1 {
   color: #227497;
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-.c-info-div a{
+.c-info-div a {
   font-size: 25px;
   color: #227497;
 }
-.c-info-div a span{
+
+.c-info-div a span {
   color: #07374c;
 }
 
-
-.map{
+.map {
   width: 100%;
   height: 500px;
 }
-/* responsive */
 
-@media  screen and (max-width:1130px) {
-  .contact-info-h1{
-    color: #227497;
-    font-size: 35px;
-    margin-bottom: 10px;
-  }
-  
-  .c-info-div a{
-    font-size: 20px;
-    color: #227497;
-  }
-  .dev-minicard a{
-    font-size: 30px;
-  }
-  .contact-icons img{
-    width: 45px;
-  }
-}
-
-@media  screen and (max-width:950px) {
-  .contact-info-h1{
-    color: #227497;
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .c-info-div a{
-    font-size: 15px;
-    color: #227497;
-  }
-  .dev-minicard a{
-    font-size: 25px;
-  }
-  .contact-icons img{
-    width: 40px;
-  }
-}
-@media screen and (max-width:815px) {
+@media screen and (max-width:1010px) {
   main section{
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
   }
-  main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  main section article{
+  main section article {
     width: 100%;
   }
-  .map{
-    height: 300px;
-  }
 }
-@media  screen and (max-width:370px) {
+@media screen and (max-width: 550px) {
   .contact-info-h1{
-    color: #227497;
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 35px;
   }
-  
-  .c-info-div a{
-    font-size: 15px;
-    color: #227497;
-  }
-  .dev-minicard a{
-    font-size: 24px;
-  }
-  .contact-icons img{
-    width: 35px;
-  }
-}
-@media  screen and (max-width:330px) {
-  .contact-info-h1{
-    color: #227497;
+  .c-info-div a {
     font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .c-info-div a{
-    font-size: 10px;
-    color: #227497;
-  }
-  .dev-minicard a{
-    font-size: 15px;
-  }
-  .contact-icons img{
-    width: 30px;
   }
 }
-
+@media screen and (max-width: 465px) {
+  .contact-info-h1{
+    font-size: 30px;
+  }
+  .c-info-div a {
+    font-size: 15px;
+  }
+  main{
+    padding: 7em 30px !important;
+  }
+}
 
 /* logo */
 
@@ -357,34 +298,32 @@ main section .map-article{
   }
 }
 
-
-
 /* scrollbar */
 
 ::-webkit-scrollbar {
   background-color: white;
   width: 4px;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #227497;
 }
 
+/* footer */
 
-
-  /* foooter */
-
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-    width: 100%;
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  bottom: 0;
 }
 
-@media screen and (max-width: 400px){
-    footer{
-        font-size: 10px;
-    }
+@media screen and (max-width: 400px) {
+  footer {
+      font-size: 10px;
+  }
 }

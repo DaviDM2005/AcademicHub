@@ -25,13 +25,7 @@
     font-family: 'ArchyEDT-Bold';
 }
 body {
-    body {
-    font-family: Arial, sans-serif;
     background-color: #E6DADC;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 }
 
 /* header and navbar */
@@ -185,11 +179,18 @@ body {
 
 /* main */
 
-main {
+body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 50px;
+  }
 
 .main-page-box{
     display: flex;

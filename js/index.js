@@ -33,7 +33,7 @@ function search() {
   let input = document.getElementById('searchbar').value.toLowerCase();
   let x = document.getElementsByClassName('subject-name');
   let x2 = document.getElementsByClassName('description');
-  let y = document.getElementsByClassName('subject-card');
+  let y = document.getElementsByClassName('filterDiv');
 
   for (i = 0; i < x.length; i++) {
     if ((!input || x[i].innerHTML.toLowerCase().includes(input)) || !input || x2[i].innerHTML.toLowerCase().includes(input)) {
@@ -43,3 +43,13 @@ function search() {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+

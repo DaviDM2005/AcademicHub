@@ -42,20 +42,57 @@
 
 
     <main>
-        <div style="text-align: center;" class="input-search" ><input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="მოძებნე საგანი.."></div>
+        <div class="search-filter">
+            <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="მოძებნე საგანი..">
+
+            <div class="filterbtndiv">
+                <button class="collapsible">ფილტრაცია</button>
+                <div class="content">
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')">ყველა</button>
+                        <button class="btn" onclick="filterSelection('დაწყებითები')"> დაწყებითები</button>
+                        <button class="btn" onclick="filterSelection('საშუალო')">საშუალო</button>
+                        <button class="btn" onclick="filterSelection('აბიტურიენტთათვის')">აბიტურიენტთათვის</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <ol class="subjects-article" >
 
+<!-- აბიტურიენტები -->
+
+
+            <div class="filterDiv აბიტურიენტთათვის">
+                <img style="width: 350px;" src="../images/subjects/english.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">ინგლისური ენა (აბიტურიენტთათვის)</div>
+                    <div class="description">ლექტორი: გიორგი ბარამიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="category">კატეგორია: 12 კლასი</div>
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: 100 ლარი</div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
             
-            <div class="subject-card">
+            <div class="filterDiv აბიტურიენტთათვის">
                 <img style="width: 350px;" src="../images/subjects/math.jpg" alt="Subject Image">
                 <div class="details">
-                    <div class="subject-name">მათემატიკა</div>
+                    <div class="subject-name">მათემატიკა (აბიტურიენტთათვის)</div>
                     <div class="description">ლექტორი: არჩილ ქათამაძე</div>
                     <div class="date-length">
                         დაწყების თარიღი: სექტემბერი 18, 2023<br>
                         ხანგრძლივობა: 1.5 საათი
                     </div>
+                    <div class="category">კატეგორია: 12 კლასი</div>
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: 150 ლარი</div>
                     <div class="see-more-button">
                         <a href="#">იხილეთ მეტი</a>
                         <a href="registration/reg.html">რეგისტრაცია</a>
@@ -63,7 +100,27 @@
                 </div>
             </div>
 
-            <div class="subject-card">
+            <div class="filterDiv აბიტურიენტთათვის">
+                <img style="width: 350px;" src="../images/subjects/history.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">ისტორია<br>(აბიტურიენტთათვის)</div>
+                    <div class="description">ლექტორი: გიორგი ბარამიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="category">კატეგორია: 12 კლასი</div>
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: 100 ლარი</div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- უფროსკლასელებისთვის -->
+
+            <div class="filterDiv საშუალო">
                 <img style="width: 350px;" src="../images/subjects/georgian.jpg" alt="Subject Image">
                 <div class="details">
                     <div class="subject-name">ქართული ენა</div>
@@ -72,6 +129,8 @@
                         დაწყების თარიღი: სექტემბერი 18, 2023<br>
                         ხანგრძლივობა: 1.5 საათი
                     </div>
+                    <div class="category">კატეგორია: 6-11 კლასი კლასი</div>
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: 80 ლარი</div>
                     <div class="see-more-button">
                         <a href="#">იხილეთ მეტი</a>
                         <a href="registration/reg.html">რეგისტრაცია</a>
@@ -79,8 +138,26 @@
                 </div>
             </div>
 
-            <div class="subject-card">
-                <img style="width: 350px;" src="../images/subjects/english.jpg" alt="Subject Image">
+            <div class="filterDiv საშუალო">
+                <img style="width: 350px;" src="../images/subjects/mathmid.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">მათემატიკა</div>
+                    <div class="description">ლექტორი: არჩილ ქათამაძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="category">კატეგორია: 6-11 კლასი კლასი</div>
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: 80 ლარი</div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv საშუალო">
+                <img style="width: 350px;" src="../images/subjects/englishmid.jpg" alt="Subject Image">
                 <div class="details">
                     <div class="subject-name">ინგლისური ენა</div>
                     <div class="description">ლექტორი: გიორგი ბარამიძე</div>
@@ -88,6 +165,8 @@
                         დაწყების თარიღი: სექტემბერი 18, 2023<br>
                         ხანგრძლივობა: 1.5 საათი
                     </div>
+                    <div class="category">კატეგორია: 6-11 კლასი კლასი</div>
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: 80 ლარი</div>
                     <div class="see-more-button">
                         <a href="#">იხილეთ მეტი</a>
                         <a href="registration/reg.html">რეგისტრაცია</a>
@@ -95,15 +174,17 @@
                 </div>
             </div>
 
-            <div class="subject-card">
-                <img style="width: 350px;" src="../images/subjects/history.jpg" alt="Subject Image">
+            <div class="filterDiv საშუალო">
+                <img style="width: 350px;" src="../images/subjects/historymid.jpg" alt="Subject Image">
                 <div class="details">
                     <div class="subject-name">ისტორია</div>
-                    <div class="description">ლექტორი: გიორგი ბარამიძე</div>
+                    <div class="description">ლექტორი: გიორგი ბარამიძე / თინა თურმანიძე</div>
                     <div class="date-length">
                         დაწყების თარიღი: სექტემბერი 18, 2023<br>
                         ხანგრძლივობა: 1.5 საათი
                     </div>
+                    <div class="category">კატეგორია: 6-11 კლასი კლასი</div>
+                    <div style="margin-top:10px;font-size: 20px;color: rgb(18, 50, 156);margin-bottom: 49.9px;" class="price">ფასი: 80 ლარი</div>
                     <div class="see-more-button">
                         <a href="#">იხილეთ მეტი</a>
                         <a href="registration/reg.html">რეგისტრაცია</a>
@@ -111,31 +192,19 @@
                 </div>
             </div>
 
-            <div class="subject-card">
-                <img style="width: 350px;" src="../images/subjects/mathbeginners.jpg" alt="Subject Image">
-                <div class="details">
-                    <div class="subject-name">მათემატიკა (დამწყებთათვის) </div>
-                    <div class="description">ლექტორი: გიორგი თურმანიძე</div>
-                    <div class="date-length">
-                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
-                        ხანგრძლივობა: 1.5 საათი
-                    </div>
-                    <div class="see-more-button">
-                        <a href="#">იხილეთ მეტი</a>
-                        <a href="registration/reg.html">რეგისტრაცია</a>
-                    </div>
-                </div>
-            </div>
+            <!-- დაწყებითები -->
 
-            <div class="subject-card">
+            <div class="filterDiv დაწყებითები">
                 <img style="width: 350px;" src="../images/subjects/georgianbeginners.jpg" alt="Subject Image">
                 <div class="details">
                     <div class="subject-name">ქართული ენა (დამწყებთათვის)</div>
-                    <div class="description">ლექტორი: გიორგი თურმანიძე</div>
+                    <div class="description">ლექტორი: გიორგი თურმანიძე / თინა თურმანიძე</div>
                     <div class="date-length">
                         დაწყების თარიღი: სექტემბერი 18, 2023<br>
                         ხანგრძლივობა: 1.5 საათი
                     </div>
+                    <div class="category">კატეგორია: 1-4 კლასი კლასი</div>                                                       
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: <a style="color: rgb(18, 50, 156); text-decoration: underline;" href="prices.html">დამოკიდებულია საგანთა რაოდენობაზე</a></div>
                     <div class="see-more-button">
                         <a href="#">იხილეთ მეტი</a>
                         <a href="registration/reg.html">რეგისტრაცია</a>
@@ -143,23 +212,7 @@
                 </div>
             </div>
 
-            <div class="subject-card">
-                <img style="width: 350px;" src="../images/subjects/buneba.jpg" alt="Subject Image">
-                <div class="details">
-                    <div class="subject-name">ბუნება</div>
-                    <div class="description">ლექტორი: გიორგი თურმანიძე</div>
-                    <div class="date-length">
-                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
-                        ხანგრძლივობა: 1.5 საათი
-                    </div>
-                    <div class="see-more-button">
-                        <a href="#">იხილეთ მეტი</a>
-                        <a href="registration/reg.html">რეგისტრაცია</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="subject-card">
+            <div class="filterDiv დაწყებითები">
                 <img style="width: 350px;" src="../images/subjects/englishbeginners.jpg" alt="Subject Image">
                 <div class="details">
                     <div class="subject-name">ინგლისური (დამწყებთათვის)</div>
@@ -168,12 +221,90 @@
                         დაწყების თარიღი: სექტემბერი 18, 2023<br>
                         ხანგრძლივობა: 1.5 საათი
                     </div>
+                    <div class="category">კატეგორია: 1-4 კლასი კლასი</div>
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: <a style="color: rgb(18, 50, 156); text-decoration: underline;" href="prices.html">დამოკიდებულია საგანთა რაოდენობაზე</a></div>
                     <div class="see-more-button">
                         <a href="#">იხილეთ მეტი</a>
                         <a href="registration/reg.html">რეგისტრაცია</a>
                     </div>
                 </div>
             </div>
+
+
+            <div class="filterDiv დაწყებითები">
+                <img style="width: 350px;" src="../images/subjects/mathbeginners.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">მათემატიკა (დამწყებთათვის) </div>
+                    <div class="description">ლექტორი: გიორგი თურმანიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="category">კატეგორია: 1-4 კლასი კლასი</div>
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: <a style="color: rgb(18, 50, 156); text-decoration: underline;" href="prices.html">დამოკიდებულია საგანთა რაოდენობაზე</a></div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv დაწყებითები">
+                <img style="width: 350px;" src="../images/subjects/buneba.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">ბუნება (დამწყებთათვის)</div>
+                    <div class="description">ლექტორი: გიორგი თურმანიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="category">კატეგორია: 1-4 კლასი კლასი</div>
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: <a style="color: rgb(18, 50, 156); text-decoration: underline;" href="prices.html">დამოკიდებულია საგანთა რაოდენობაზე</a></div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv დაწყებითები">
+                <img style="width: 350px;" src="../images/subjects/art.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">ხელოვნება (დამწყებთათვის)</div>
+                    <div class="description">ლექტორი: გიორგი თურმანიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="category">კატეგორია: 1-4 კლასი კლასი</div>
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: <a style="color: rgb(18, 50, 156); text-decoration: underline;" href="prices.html">დამოკიდებულია საგანთა რაოდენობაზე</a></div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv დაწყებითები">
+                <img style="width: 350px;" src="../images/subjects/music.jpg" alt="Subject Image">
+                <div class="details">
+                    <div class="subject-name">მუსიკა (დამწყებთათვის)</div>
+                    <div class="description">ლექტორი: გიორგი თურმანიძე</div>
+                    <div class="date-length">
+                        დაწყების თარიღი: სექტემბერი 18, 2023<br>
+                        ხანგრძლივობა: 1.5 საათი
+                    </div>
+                    <div class="category">კატეგორია: 1-4 კლასი კლასი</div>
+                    <div style="margin-top:10px; font-size: 20px; color: rgb(18, 50, 156);" class="price">ფასი: <a style="color: rgb(18, 50, 156); text-decoration: underline;" href="prices.html">დამოკიდებულია საგანთა რაოდენობაზე</a></div>
+                    <div class="see-more-button">
+                        <a href="#">იხილეთ მეტი</a>
+                        <a href="registration/reg.html">რეგისტრაცია</a>
+                    </div>
+                </div>
+            </div>
+
+            
 
 
 
@@ -188,5 +319,42 @@
 
 
     <script src="../js/index.js" ></script>
+    <script>
+        function filterSelection(category) {
+            var filterDivs = document.getElementsByClassName("filterDiv");
+            
+            if (category === "all") {
+                for (var i = 0; i < filterDivs.length; i++) {
+                    filterDivs[i].style.display = "block";
+                }
+            } else {
+                for (var i = 0; i < filterDivs.length; i++) {
+                    if (filterDivs[i].classList.contains(category)) {
+                        filterDivs[i].style.display = "block";
+                    } else {
+                        filterDivs[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    
+        function search() {
+            var input = document.getElementById("searchbar");
+            var filter = input.value.toUpperCase();
+            var filterDivs = document.getElementsByClassName("filterDiv");
+            
+            for (var i = 0; i < filterDivs.length; i++) {
+                var subjectName = filterDivs[i].getElementsByClassName("subject-name")[0];
+                if (subjectName) {
+                    var text = subjectName.textContent || subjectName.innerText;
+                    if (text.toUpperCase().indexOf(filter) > -1) {
+                        filterDivs[i].style.display = "block";
+                    } else {
+                        filterDivs[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>

@@ -486,10 +486,10 @@ main {
 }
 @media screen and (max-width:550px) {
     .about-us-main .abt-main-h1{
-        font-size: 25px;
+        font-size: 28px;
     }
     .about-us-main .abt-main-p, .content p{
-        font-size: 15px;
+        font-size: 20px;
     }
     .about-us-main{
         padding: 0 30px !important;

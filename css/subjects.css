@@ -398,13 +398,31 @@ main{
         padding: 0 30px;
     }
 }
-@media screen and (max-width:355px){
+@media screen and (max-width:375px){
     #searchbar{
         font-size: 16px;
     }
     .collapsible{
         padding: 5px 34px;
         font-size: 16px;
+    }
+}
+@media screen and (max-width:345px){
+    #searchbar{
+        font-size: 16px;
+    }
+    main{
+        padding: 6em 22px;
+    }
+    .content{
+        width: 122px;
+    }
+    .collapsible{
+        padding: 5px 25px;
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 14px;
     }
 }
 

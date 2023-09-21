@@ -193,8 +193,7 @@ main{
 .search-filter{
     display: flex;
     justify-content: space-between;
-    padding:0 90px;
-    gap: 20px;
+    padding:0 23px;
 }
 
 .collapsible{
@@ -203,10 +202,9 @@ main{
     font-size: 20px;
     color: white;
     background-color: #227497;
-    border-radius: 10px;
-    border: none;
+    border-radius: 0 10px 10px 0;
     outline: none;
-    box-shadow: 0 0 3px black;
+    border: none;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -259,16 +257,16 @@ main{
 
 
 #searchbar{
-    width: 95%;
+    width: 100%;
     height: 50px;
     font-size: 20px;
     padding-left: 20px;
-    border-radius: 8px;
+    border-radius: 8px 0 0 8px;
     outline: none;
+    border-right: 2px solid white !important;
     border: none;
     color: white;
-    background: rgb(30,22,169);
-    background: linear-gradient(90deg, #227497 0%, rgba(0,212,255,0) 100%);
+    background: #227497;
     transition: 0.5s;
 }
 #searchbar:focus{
@@ -295,7 +293,7 @@ main{
 .subjects-article{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .filterDiv {

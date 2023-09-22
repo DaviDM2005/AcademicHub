@@ -354,6 +354,18 @@ main section{
     }
 }
 
+@media screen and (max-width:400px){
+    .filterDiv{
+        width: 290px;
+    }
+    .filterDiv img{
+        width: 290px !important;
+    }
+    subjects-article{
+        padding: 0 30px;
+    }
+}
+
 /* logo */
 
 @media screen and (max-width:410px) {

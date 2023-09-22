@@ -46,7 +46,6 @@ function search() {
 
 
 
-
 // reveal animation
 
 const filterDivs = document.querySelectorAll('.filterDiv');

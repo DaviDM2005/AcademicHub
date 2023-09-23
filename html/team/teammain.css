@@ -312,9 +312,6 @@ main section{
     .description-and-image .description-main h1{
         font-size: 35px;
     }
-    .description-and-image .description-main p{
-        font-size: 15px;
-    }
     .memberimage{
         width: 350px;
         height: auto;
@@ -323,9 +320,6 @@ main section{
 @media screen and (max-width:765px) {
     .description-and-image .description-main h1{
         font-size: 30px;
-    }
-    .description-and-image .description-main p{
-        font-size: 14px;
     }
     .memberimage{
         width: 300px;
@@ -344,9 +338,6 @@ main section{
 @media screen and (max-width:400px) {
     .description-and-image .description-main h1{
         font-size: 30px;
-    }
-    .description-and-image .description-main p{
-        font-size: 14px;
     }
     .memberimage{
         width: 250px;

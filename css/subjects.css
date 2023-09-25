@@ -476,6 +476,17 @@ main{
   }
 
 
+  /* nothing was found */
+ #nothing-found{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+ }
+ #nothing-found img{
+    width: 180px;
+    margin-top: 20px;
+ }
+
 
 
   /* foooter */

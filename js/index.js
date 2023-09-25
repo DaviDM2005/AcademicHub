@@ -55,15 +55,27 @@ function search() {
   let x = document.getElementsByClassName('subject-name');
   let x2 = document.getElementsByClassName('description');
   let y = document.getElementsByClassName('filterDiv');
+  let notFoundMessage = document.getElementById('notFoundMessage');
+
+  let found = false; // Initialize a flag to track if any results were found
 
   for (i = 0; i < x.length; i++) {
-    if ((!input || x[i].innerHTML.toLowerCase().includes(input)) || !input || x2[i].innerHTML.toLowerCase().includes(input)) {
+    if ((!input || x[i].innerHTML.toLowerCase().includes(input)) || (!input || x2[i].innerHTML.toLowerCase().includes(input))) {
       y[i].style.display = "block"; // Reset to default display value
+      found = true; // Set the flag to true if a result is found
     } else {
       y[i].style.display = "none";
     }
   }
+
+  // Show/hide the "Nothing was found" message based on the flag
+  if (found) {
+    notFoundMessage.style.display = "none";
+  } else {
+    notFoundMessage.style.display = "block";
+  }
 }
+
 
 
 
@@ -87,5 +99,31 @@ filterDivs.forEach(div => {
 
 
 
+// nothing was found
+
+const searchInput = document.querySelector('#searchbar'); // Update the ID to match your HTML
+const list = document.querySelector('.subjects-article'); // Update the class to match your HTML
+const nothingFound = document.querySelector('#nothing-found');
+
+searchInput.addEventListener('input', (event) => {
+  const searchTerm = event.target.value.toLowerCase();
+  let numMatches = 0;
+
+  Array.from(list.children).forEach((item) => {
+    const textContent = item.textContent.toLowerCase();
+    if (textContent.includes(searchTerm)) {
+      item.style.display = 'block';
+      numMatches++;
+    } else {
+      item.style.display = 'none';
+    }
+  });
+
+  if (numMatches === 0) {
+    nothingFound.style.display = 'block'; // Display the "Nothing was found" message
+  } else {
+    nothingFound.style.display = 'none'; // Hide the message if there are matches
+  }
+});
 
 

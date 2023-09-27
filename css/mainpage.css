@@ -47,7 +47,6 @@ html{height: 94.8%;}
     list-style: none;
     position: fixed;
     padding: 12px 20px;
-    z-index: 999999;
     background-color: #e6dadcb7;
     backdrop-filter: blur(7px);
     box-shadow: 0 0 10px  black;

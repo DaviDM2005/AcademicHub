@@ -174,13 +174,11 @@ body {
 
 /* main */
 
-main section{
-    padding: 40px;
-}
 .description-and-image{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    padding: 0 40px;
 }
 .memberimage{
     width: 400px;
@@ -204,6 +202,7 @@ main section{
 
 .subjects{
     margin-top: 30px;
+    padding: 0 40px;
 }
 
 
@@ -280,7 +279,7 @@ main section{
 }
 
 .contact{
-    padding: 40px 0;
+    padding: 40px;
 }
 .contact .contactDiv{
     display: flex;
@@ -298,6 +297,7 @@ main section{
 .contact .contactDiv .contact-a{
     font-size: 30px;
     color: #227497;
+    width: fit-content;
 }
 
 
@@ -375,12 +375,6 @@ main section{
         width: fit-content;
     }
     
-    .contact .contactDiv .contact-a{
-        font-size: 20px;
-        color: #227497;
-        border-bottom: 5px solid transparent;
-        transition: 0.3s ease-in-out;
-    }
 }
 @media screen and (max-width:550px) {
     .contact   h1{

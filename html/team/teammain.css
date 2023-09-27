@@ -279,8 +279,26 @@ main section{
     border-radius: 5px;
 }
 
+.contact{
+    padding: 40px 0;
+}
+.contact .contactDiv{
+    display: flex;
+    flex-direction: column;
+}
 
+.contact   h1{
+    font-size: 50px;
+    color: #227497;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #227497;
+    width: fit-content;
+}
 
+.contact .contactDiv .contact-a{
+    font-size: 30px;
+    color: #227497;
+}
 
 
 
@@ -307,6 +325,20 @@ main section{
     }
     .description-and-image .description-main p{
         font-size: 18px;
+    }
+    .contact   h1{
+        font-size: 45px;
+        color: #227497;
+        margin-bottom: 20px;
+        border-bottom: 5px solid #227497;
+        width: fit-content;
+    }
+    
+    .contact .contactDiv .contact-a{
+        font-size: 25px;
+        color: #227497;
+        border-bottom: 5px solid transparent;
+        transition: 0.3s ease-in-out;
     }
 }
 @media screen and (max-width:900px) {
@@ -335,6 +367,36 @@ main section{
         text-align: center;
         width: 100%;
     }
+    .contact   h1{
+        font-size: 40px;
+        color: #227497;
+        margin-bottom: 20px;
+        border-bottom: 5px solid #227497;
+        width: fit-content;
+    }
+    
+    .contact .contactDiv .contact-a{
+        font-size: 20px;
+        color: #227497;
+        border-bottom: 5px solid transparent;
+        transition: 0.3s ease-in-out;
+    }
+}
+@media screen and (max-width:550px) {
+    .contact   h1{
+        font-size: 40px;
+        color: #227497;
+        margin-bottom: 20px;
+        border-bottom: 5px solid #227497;
+        width: fit-content;
+    }
+    
+    .contact .contactDiv .contact-a{
+        font-size: 15px;
+        color: #227497;
+        border-bottom: 5px solid transparent;
+        transition: 0.3s ease-in-out;
+    }
 }
 @media screen and (max-width:400px) {
     .description-and-image .description-main h1{
@@ -344,6 +406,7 @@ main section{
         width: 250px;
         height: auto;
     }
+    
 }
 
 @media screen and (max-width:400px){

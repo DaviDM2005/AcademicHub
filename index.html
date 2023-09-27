@@ -57,6 +57,25 @@
         .contact a img:hover{
             background-color: #ffffff;
         }
+
+        @media screen and (max-width:500px){
+            #countdown {
+            font-size: 17px;
+            color: #227497;
+            
+        }
+        .contact{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .contact a img{
+            width: 30px;
+            background-color: #5e787e;
+            border-radius: 100%;
+            transition: 0.3s;
+        }
+        }
     </style>
 </head>
 <body>
@@ -107,7 +126,7 @@
     </footer>
 
     <script>
-    // Function to update the countdown timer
+    
     function updateCountdown() {
         const now = new Date().getTime();
         const countdownDate = new Date("2023-10-01T00:00:00").getTime();
@@ -121,16 +140,15 @@
 
             document.getElementById("timer").innerHTML = `${days} დღე : ${hours} საათი : ${minutes} წუთი : ${seconds} წამი`;
         } else {
-            // When the countdown expires, hide the loader and show the main content
+            
             document.getElementById("loader").style.display = "none";
             document.querySelector(".main-page-box").classList.remove("hidden");
         }
     }
 
-    // Update the countdown immediately when the page loads
+    
     updateCountdown();
 
-    // Update the countdown every second
     setInterval(updateCountdown, 1000);
 </script>
 

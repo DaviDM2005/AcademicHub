@@ -23,8 +23,12 @@
     font-family: 'ArchyEDT-Bold';
     resize: none;
 }
-body {
-    background-color: #E6DADC;
+body{
+  height: 100%;
+  background-image: url(../images/background.jpg);
+  background-color: #E6DADC;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* header and navbar */

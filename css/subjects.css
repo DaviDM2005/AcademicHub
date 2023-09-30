@@ -28,6 +28,11 @@ body {
     background-color: #E6DADC;
     height: 100%;
     overflow-x: hidden;
+    background-image: url(../images/background.jpg);
+    background-color: #E6DADC;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 html{
@@ -304,6 +309,7 @@ main{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     opacity: 0;
     transform: translateY(20px);
+    backdrop-filter: blur(5px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 @media screen and (max-width:1270px){

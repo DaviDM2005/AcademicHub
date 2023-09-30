@@ -30,6 +30,7 @@ body{
     background-color: #E6DADC;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* header and navbar */

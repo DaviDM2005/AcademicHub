@@ -94,19 +94,7 @@
     </header>
 
     <main>
-        <div id="loader">
-            <div class="container-loading">
-                <div id="countdown">გაშვებამდე დარჩენილია<br> <span id="timer"></span></div>
-
-                <div class="contact" >
-
-                        <a href="https://www.facebook.com/profile.php?id=61550520973546" target="_blank"><img src="images/social-links/facebook.png" ></a>
-                        <a href="https://www.instagram.com/academichub5/" target="_blank"><img src="images/social-links/instagram.png" ></a>
-                        <a href="mailto:academichub23@gmail.com" target="_blank"><img src="images/social-links/email.png" ></a>
-                        <a href="tel:592073598" target="_blank"><img src="images/social-links/phone-call.png" ></a>
-                </div>
-            </div>
-        </div>
+        
 
         <div class="main-page-box">
             <h1>აკადემიური კერა</h1>
@@ -119,32 +107,7 @@
         © By <a href="https://mamuladzedavid.netlify.app/"  target="_blank" style=" text-decoration: underline;">David Mamuladze</a> - ყველა უფლება დაცულია 2023
     </footer>
 
-    <script>
     
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const countdownDate = new Date("2023-10-05T00:00:00").getTime();
-        const distance = countdownDate - now;
-
-        if (distance > 0) {
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("timer").innerHTML = `${days} დღე : ${hours} საათი : ${minutes} წუთი : ${seconds} წამი`;
-        } else {
-            
-            document.getElementById("loader").style.display = "none";
-            document.querySelector(".main-page-box").classList.remove("hidden");
-        }
-    }
-
-    
-    updateCountdown();
-
-    setInterval(updateCountdown, 1000);
-</script>
 
 </body>
 </html>

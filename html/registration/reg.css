@@ -191,8 +191,10 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     width: 700px;
-    height: 600px;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form-container h2 {
@@ -260,6 +262,41 @@ input::-webkit-inner-spin-button {
 
 
 /* responsive */
+
+@media screen and (max-width:500px){
+    .form-container h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .form-group input[type="text"], .form-group input[type="number"], .form-group input[type="email"], .form-group select {
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .form-group input[type="submit"] {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        width: 130px;
+        height: 55px;
+        font-size: 20px;
+    }
+    .form-group input[type="submit"] {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        width: 130px;
+        height: 55px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:395px){
+    .form-container h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+}
 
 /* logo */
 
